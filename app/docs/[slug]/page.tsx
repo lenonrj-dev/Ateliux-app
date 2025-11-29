@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
+import type { ReactNode } from "react";
 import { DocsContent } from "@/components/docs/DocsContent";
 import { DocsCallout } from "@/components/docs/DocsCallout";
 import { docsEntries } from "../data";
 
-const contentMap: Record<string, JSX.Element> = {
+const contentMap: Record<string, ReactNode> = {
   "visao-geral-ateliux": (
     <>
       <p>
