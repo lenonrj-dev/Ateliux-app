@@ -1,12 +1,12 @@
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
-import { Hero } from "@/components/sections/Hero";
-import { LogosStrip } from "@/components/sections/LogosStrip";
-import { BusinessApplication } from "@/components/sections/BusinessApplication";
-import { DataInsights } from "@/components/sections/DataInsights";
-import { AutomationEfficiency } from "@/components/sections/AutomationEfficiency";
-import { Templates } from "@/components/sections/Templates";
-import { CTA } from "@/components/sections/CTA";
+import { Hero } from "@/components/sections/landing/Hero";
+import { LogosStrip } from "@/components/sections/landing/LogosStrip";
+import { BusinessApplication } from "@/components/sections/landing/BusinessApplication";
+import { DataInsights } from "@/components/sections/landing/DataInsights";
+import { AutomationEfficiency } from "@/components/sections/landing/AutomationEfficiency";
+import { Templates } from "@/components/sections/landing/Templates";
+import { CTA } from "@/components/sections/landing/CTA";
 
 export default function Home() {
   return (

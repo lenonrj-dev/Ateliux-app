@@ -6,12 +6,12 @@ type Item = {
 };
 
 const items: Item[] = [
-  { label: "SaaS B2B", icon: "SB" },
-  { label: "E-commerce", icon: "EC" },
-  { label: "Landing pages", icon: "LP" },
-  { label: "Sites institucionais", icon: "SI" },
+  { label: "Site institucional", icon: "SI" },
+  { label: "Landing page", icon: "LP" },
+  { label: "Ecommerce completo", icon: "EC" },
+  { label: "Dashboards e paineis", icon: "DB" },
+  { label: "Automacao com IA", icon: "AI" },
   { label: "Blogs e docs", icon: "BD" },
-  { label: "Automacao", icon: "AU" },
 ];
 
 export function LogosStrip() {

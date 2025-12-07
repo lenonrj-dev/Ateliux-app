@@ -4,16 +4,36 @@ export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-[#05070f] text-slate-200">
       <div className="mx-auto max-w-6xl px-6 pb-12 lg:px-8">
+        <div className="flex flex-wrap items-center gap-4 py-6 text-sm text-slate-300">
+          <a href="/docs" className="transition hover:text-primary">
+            Documentacao
+          </a>
+          <a href="/docs/termos-de-servico" className="transition hover:text-primary">
+            Termos de servico
+          </a>
+          <a href="/docs/politica-de-privacidade" className="transition hover:text-primary">
+            Privacidade
+          </a>
+          <a href="/docs/politica-de-cookies" className="transition hover:text-primary">
+            Cookies
+          </a>
+          <a href="/docs/suporte-e-manutencao-atualizacoes" className="transition hover:text-primary">
+            Suporte e manutencao
+          </a>
+          <a href="/docs/faq-projetos-ateliux" className="transition hover:text-primary">
+            FAQ
+          </a>
+        </div>
         <div className="border-t border-white/5 pt-6">
           <div className="flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400">
             <div className="flex items-center gap-2">
               <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/10 bg-white/5">
                 <Globe2 className="h-3.5 w-3.5" />
               </span>
-              <span>Português (BR)</span>
+              <span>Portugues (BR)</span>
               <ChevronDown className="h-3 w-3" />
             </div>
-            <span>© {new Date().getFullYear()} Ateliux. Todos os direitos reservados.</span>
+            <span>(c) {new Date().getFullYear()} Ateliux. Todos os direitos reservados.</span>
             <div className="flex items-center gap-3 text-sm">
               {[
                 { label: "LinkedIn", icon: <Linkedin className="h-4 w-4" /> },

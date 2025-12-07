@@ -3,8 +3,7 @@ import Image from "next/image";
 const features = [
   {
     title: "Insights de clientes",
-    description:
-      "Analise as interacoes dos clientes em todos os pontos de contato com o seu produto.",
+    description: "Analise as interacoes dos clientes em todos os pontos de contato com o seu produto.",
     icon: "/icone_config.png",
   },
   {
@@ -14,7 +13,7 @@ const features = [
   },
   {
     title: "Otimizacao de campanhas",
-    description: "Meça o sucesso das campanhas com taxas de conversao e engajamento consistentes.",
+    description: "Meca o sucesso das campanhas com taxas de conversao e engajamento consistentes.",
     icon: "/icone_alvo.png",
   },
 ];

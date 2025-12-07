@@ -23,7 +23,7 @@ export function Hero() {
             +
           </span>
           <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-200">
-            Soluções em SaaS
+            Solucoes em SaaS
           </span>
         </div>
 
@@ -32,12 +32,12 @@ export function Hero() {
             id="hero-title"
             className="text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-6xl"
           >
-            Transforme seus dados em
-            <span className="block text-primary">Soluções acionáveis</span>
+            Desenvolvimento de sites, ecommerces e
+            <span className="block text-primary">produtos digitais com IA</span>
           </h1>
           <p className="text-lg text-slate-200/85 sm:text-xl">
-            Desbloqueie o potencial das suas operações com um estúdio que entrega SaaS B2B,
-            e-commerce, sites institucionais, blogs e landing pages com performance ciano.
+            A Ateliux cria sites institucionais, landing pages de alta conversao, ecommerces completos,
+            dashboards personalizados e automacoes com IA, sempre com performance, SEO tecnico e design ciano.
           </p>
         </div>
 
@@ -52,17 +52,17 @@ export function Hero() {
             href="/portfolio"
             className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-primary/60 hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            Ver portfólio
+            Ver portfolio
           </Link>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-slate-200/80">
           {[
             "SaaS sob medida",
-            "Arquitetura escalável",
-            "Sprints ágeis",
-            "Onboarding guiado",
-            "Suporte 24/7",
+            "Arquitetura escalavel",
+            "Sprints ageis",
+            "SEO tecnico e analytics",
+            "Automacoes com IA",
           ].map((item) => (
             <span
               key={item}

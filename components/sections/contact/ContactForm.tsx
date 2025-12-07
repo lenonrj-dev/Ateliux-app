@@ -9,13 +9,13 @@ const businessSizes = ["Autonomo", "Pequena empresa", "Media empresa", "Grande e
 const projectTypes = [
   "SaaS",
   "Site institucional",
-  "E-commerce",
+  "Ecommerce",
   "Dashboard / Painel",
   "Blog",
   "Landing page",
   "Outro",
 ];
-const budgets = ["ate R$ 5.000", "R$ 5.000 – R$ 15.000", "acima de R$ 15.000"];
+const budgets = ["ate R$ 5.000", "R$ 5.000 a R$ 15.000", "acima de R$ 15.000"];
 
 export function ContactForm() {
   const [state, setState] = useState<FormState>("idle");
@@ -69,17 +69,15 @@ export function ContactForm() {
           <p className="text-xs font-semibold uppercase tracking-[0.26em] text-primary">
             Briefing rapido
           </p>
-          <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-            Conte-nos sobre o seu projeto
-          </h2>
+          <h2 className="text-3xl font-semibold text-white sm:text-4xl">Conte nos sobre o seu projeto</h2>
           <p className="text-base text-slate-300/85">
             Preencha os campos e enviaremos uma resposta personalizada com prazos, estimativas e o proximo
             passo. Mantemos tudo em ciano: claro, direto e seguro.
           </p>
           <ul className="space-y-2 text-sm text-slate-300/80">
-            <li>• Atendimento 24/7 para clientes ativos e SLAs dedicados.</li>
-            <li>• Times multidisciplinares para SaaS, e-commerce, sites e landing pages.</li>
-            <li>• Suporte na definicao de escopo, integrações e roadmap.</li>
+            <li>- Atendimento 24/7 para clientes ativos e SLAs dedicados.</li>
+            <li>- Times multidisciplinares para SaaS, ecommerce, sites e landing pages.</li>
+            <li>- Suporte na definicao de escopo, integracoes e roadmap.</li>
           </ul>
         </div>
 
@@ -205,7 +203,7 @@ export function ContactForm() {
               name="descricao"
               rows={4}
               className="rounded-xl border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-white outline-none transition focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
-              placeholder="Contexto, objetivo, publico, funcionalidades-chave e integrações desejadas."
+              placeholder="Contexto, objetivo, publico, funcionalidades chave e integracoes desejadas."
             />
           </label>
 

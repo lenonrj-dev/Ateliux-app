@@ -5,38 +5,32 @@ import Link from "next/link";
 export default function DocsHome() {
   return (
     <DocsContent
-      title="Documentacao da Ateliux"
-      description="Entenda como trabalhamos com SaaS, sites, e-commerce, automacoes e squads dedicados."
+      title="Documentacao Ateliux"
+      description="Guia completo sobre quem somos, como trabalhamos, termos, privacidade e suporte."
     >
       <p>
-        Esta documentacao apresenta como a Ateliux estrutura projetos de software, design e growth. Use
-        como guia para onboarding do seu time, revisao de contratos e alinhamento de processos.
+        Aqui voce encontra a visao geral da Ateliux, nossa metodologia, servicos, termos, politicas e
+        orientacoes de seguranca e suporte. Use este material para onboarding, revisao de contratos e
+        alinhamento com seu time.
       </p>
       <p>
-        Em caso de duvidas ou para iniciar um projeto, acesse nossa pagina de{" "}
-        <Link href="/contato">contato</Link>.
+        Precisa de ajuda ou quer iniciar um projeto? Visite <Link href="/contato">/contato</Link>.
       </p>
 
-      <DocsCallout title="Nota">
-        Mantemos supervisao humana em todas as entregas e uso de agentes de IA. A responsabilidade final
-        sobre decisoes de produto e dados e sempre compartilhada com o cliente.
+      <DocsCallout title="Resumo">
+        Cobertura completa: visao geral, metodologia, servicos e produtos, termos, privacidade, cookies,
+        suporte, cancelamento, propriedade intelectual, seguranca e FAQ.
       </DocsCallout>
 
-      <h2>Principais topicos</h2>
+      <h2>Secoes principais</h2>
       <ul>
-        <li>Primeiros passos e como iniciar um projeto.</li>
-        <li>Formatos de trabalho, fluxos e colaboracao com times internos.</li>
-        <li>Uso de IA com supervisao, auditoria e limites de aplicacao.</li>
-        <li>Entregaveis padrao, ambientes, suporte e SLAs.</li>
-        <li>Contratos, licencas, privacidade, cancelamento e financeiro.</li>
-        <li>Guia para parceiros e operacao white-label.</li>
+        <li>Quem somos e nossa proposta de valor.</li>
+        <li>Metodologia de projetos: etapas, rituais e aprovacoes.</li>
+        <li>Servicos e produtos com escopo e limites.</li>
+        <li>Termos de servico, privacidade, cookies e direitos.</li>
+        <li>Suporte, manutencao, cancelamento e reembolso.</li>
+        <li>Propriedade intelectual, seguranca e FAQ.</li>
       </ul>
-
-      <h2>Para quem e esta doc</h2>
-      <p>
-        Lideres de produto, marketing e tecnologia, fundadores e equipes B2B que precisam de clareza sobre
-        como a Ateliux opera, entrega e se integra aos seus processos.
-      </p>
     </DocsContent>
   );
 }

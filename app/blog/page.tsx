@@ -1,27 +1,76 @@
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
+import { NewsroomHero } from "@/components/sections/newsroom/NewsroomHero";
+import { FeaturedPost } from "@/components/sections/newsroom/FeaturedPost";
+import { NewsletterFollow } from "@/components/sections/newsroom/NewsletterFollow";
+import { NewsPostsGrid, type PostCard } from "@/components/sections/newsroom/NewsPostsGrid";
+
+const featured = {
+  title: "Bastidores dos nossos projetos digitais",
+  category: "Insight Ateliux",
+  date: "Mar 17, 2023",
+  description:
+    "Como estruturamos sites, ecommerce e automacoes com base em UX, performance e integracoes claras.",
+  image: "/card_grafico.png",
+};
+
+const posts: PostCard[] = [
+  {
+    title: "Design funcional para sites e landings",
+    description: "Como combinamos UX, copy e page speed para elevar conversao em lancamentos.",
+    date: "Mar 17, 2023",
+    category: "Produto",
+    image: "/card_welcome.png",
+  },
+  {
+    title: "Stack ecommerce pronta para operar",
+    description: "Gateways, antifraude, frete e CRM conectados para lojas que escalam.",
+    date: "Mar 17, 2023",
+    category: "Ecommerce",
+    image: "/card_analityc_corte.png",
+  },
+  {
+    title: "Dashboards em ciano para decisao rapida",
+    description: "KPIs visuais, alertas e governance desde o primeiro deploy.",
+    date: "Mar 17, 2023",
+    category: "Dados",
+    image: "/grafico_desempenho.png",
+  },
+  {
+    title: "Agentes de IA supervisionada",
+    description: "Automacoes para WhatsApp e Instagram com revisao humana e logs claros.",
+    date: "Mar 17, 2023",
+    category: "Automacao",
+    image: "/grafico_pizza.png",
+  },
+  {
+    title: "Conteudo e SEO tecnico alinhados",
+    description: "Checklist de SEO, dados estruturados e copy que gera autoridade.",
+    date: "Mar 17, 2023",
+    category: "SEO",
+    image: "/Analityc.png",
+  },
+  {
+    title: "Metodologia Ateliux de entrega",
+    description: "Discovery, planejamento, sprints curtos e acompanhamento pos deploy.",
+    date: "Mar 17, 2023",
+    category: "Metodologia",
+    image: "/card_grafico.png",
+  },
+];
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen bg-[#020308] text-slate-100">
+    <div className="min-h-screen bg-black text-slate-100">
       <Navbar />
-      <main className="mx-auto max-w-5xl px-6 pb-24 pt-28 lg:px-8 lg:pt-36">
-        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 px-8 py-12 shadow-[0_0_45px_-25px_rgba(0,223,255,0.8)] backdrop-blur">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(0,223,255,0.18),transparent_35%),radial-gradient(circle_at_80%_5%,rgba(0,223,255,0.12),transparent_40%)]" />
-          <div className="relative space-y-6">
-            <p className="text-xs uppercase tracking-[0.28em] text-primary">Blog Ateliux</p>
-            <h1 className="text-4xl font-semibold text-white">Conteúdo sobre produto e tecnologia</h1>
-            <p className="text-lg text-slate-200/80">
-              Artigos sobre arquitetura SaaS, UX, SEO técnico, crescimento e branding. Tudo no tom ciano da
-              Ateliux para inspirar times de produto e marketing.
-            </p>
-            <div className="flex flex-wrap gap-3 text-sm text-slate-200/80">
-              <span className="rounded-full bg-white/5 px-4 py-2">Guias práticos</span>
-              <span className="rounded-full bg-white/5 px-4 py-2">Estudos de caso</span>
-              <span className="rounded-full bg-white/5 px-4 py-2">Novidades do estúdio</span>
-            </div>
-          </div>
-        </div>
+      <main className="mx-auto flex max-w-[1180px] flex-col gap-14 px-6 pb-24 pt-14 lg:px-8 lg:pt-20">
+        <NewsroomHero
+          title="Newsroom Ateliux"
+          description="Novidades, bastidores e guias praticos sobre sites, ecommerce, dashboards e automacoes."
+        />
+        <FeaturedPost {...featured} />
+        <NewsletterFollow />
+        <NewsPostsGrid posts={posts} />
       </main>
       <Footer />
     </div>

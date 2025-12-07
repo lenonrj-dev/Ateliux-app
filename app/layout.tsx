@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ateliux | SaaS e experiências digitais em ciano",
+  title: "Ateliux | SaaS e experiencias digitais em ciano",
   description:
-    "A Ateliux cria SaaS, sites institucionais, e-commerce e landing pages de alta conversão com performance e visual ciano.",
+    "A Ateliux cria SaaS, sites institucionais, ecommerce e landing pages de alta conversao com performance e visual ciano.",
 };
 
 export default function RootLayout({

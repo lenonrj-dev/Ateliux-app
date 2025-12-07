@@ -39,7 +39,7 @@ export function AutomationEfficiency() {
               <li className="flex items-start gap-3">
                 <span className="mt-1 h-2 w-2 rounded-full bg-primary shadow-[0_0_12px_-4px_rgba(0,223,255,1)]" aria-hidden />
                 <div>
-                  <p className="font-semibold text-white">Otimização de workflow</p>
+                  <p className="font-semibold text-white">Otimizacao de workflow</p>
                   <p className="text-slate-300/75">
                     Identifique e elimine ineficiencias com alertas, playbooks e automacoes ciano.
                   </p>

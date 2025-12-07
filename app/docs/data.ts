@@ -12,121 +12,125 @@ export const docsEntries: DocEntry[] = [
     category: "Primeiros passos",
     title: "Visao geral da Ateliux",
     slug: "visao-geral-ateliux",
-    description:
-      "Quem somos, o que fazemos e como atuamos com SaaS, sites, e-commerce e landing pages.",
+    description: "Quem somos, proposta de valor e entregas digitais.",
     order: 1,
   },
   {
     category: "Primeiros passos",
     title: "Como iniciar um projeto",
     slug: "como-iniciar-um-projeto",
-    description:
-      "Checklist para contato inicial, briefing, objetivos, prazos e orcamento para validar escopo.",
+    description: "Briefing, objetivos, prazos e alinhamentos iniciais.",
     order: 2,
   },
 
-  // Formatos de trabalho
+  // Metodologia
   {
-    category: "Formatos de trabalho",
+    category: "Metodologia",
+    title: "Metodologia de projetos",
+    slug: "metodologia-de-projetos",
+    description: "Etapas de descoberta ao deploy e acompanhamento.",
+    order: 1,
+  },
+  {
+    category: "Metodologia",
     title: "Formatos de projeto",
     slug: "formatos-de-projeto",
-    description:
-      "Projeto fechado, pacotes recorrentes, time dedicado/squad e modelos hibridos para SaaS.",
-    order: 1,
+    description: "Projeto fechado, recorrente, squad dedicado e hibridos.",
+    order: 2,
   },
   {
-    category: "Formatos de trabalho",
+    category: "Metodologia",
     title: "Fluxo de trabalho",
     slug: "fluxo-de-trabalho",
-    description:
-      "Etapas de descoberta, planejamento, design, desenvolvimento, QA, homologacao e go live.",
-    order: 2,
-  },
-  {
-    category: "Formatos de trabalho",
-    title: "Colaboracao com time interno",
-    slug: "colaboracao-com-time-interno-do-cliente",
-    description:
-      "Como atuamos com squads mistos, rituais, alinhamentos e papeis como PO e Tech Lead.",
+    description: "Rituais, revisoes e aprovacoes por fase.",
     order: 3,
   },
-
-  // Uso de IA e agentes
   {
-    category: "Uso de IA e agentes",
-    title: "Uso de IA e agentes",
-    slug: "uso-de-ia-e-agentes",
-    description:
-      "Como aplicamos agentes de IA com supervisao humana em marketing, conteudo e suporte.",
+    category: "Metodologia",
+    title: "Colaboracao com time interno",
+    slug: "colaboracao-com-time-interno",
+    description: "Papeis, canais e operacao com squads mistos.",
+    order: 4,
+  },
+
+  // Servicos
+  {
+    category: "Servicos",
+    title: "Servicos e produtos",
+    slug: "servicos-e-produtos",
+    description: "Sites, landing pages, ecommerce, dashboards e automacoes/IA.",
+    order: 1,
+  },
+
+  // Termos e politicas
+  {
+    category: "Termos e politicas",
+    title: "Termos de servico",
+    slug: "termos-de-servico",
+    description: "Condicoes gerais, responsabilidades e encerramento.",
     order: 1,
   },
   {
-    category: "Uso de IA e agentes",
-    title: "Limites e boas praticas de IA",
-    slug: "limites-e-boa-pratica-de-ia",
-    description: "Diretrizes de seguranca, limites e conformidade para uso de IA em projetos.",
+    category: "Termos e politicas",
+    title: "Politica de privacidade",
+    slug: "politica-de-privacidade",
+    description: "Dados coletados, uso, direitos e bases legais.",
     order: 2,
   },
   {
-    category: "Uso de IA e agentes",
-    title: "Auditoria e controle humano",
-    slug: "auditoria-e-controle-humano",
-    description: "Rotinas de revisao humana, logs e monitoramento de agentes autonomos.",
+    category: "Termos e politicas",
+    title: "Politica de cookies",
+    slug: "politica-de-cookies",
+    description: "Tipos de cookies, finalidades e como controlar.",
     order: 3,
   },
-
-  // Entregas e suporte
   {
-    category: "Entregas e suporte",
+    category: "Termos e politicas",
+    title: "Cancelamento e reembolso",
+    slug: "politica-de-cancelamento-reembolso",
+    description: "Regras de cancelamento, reembolso e encerramento.",
+    order: 4,
+  },
+
+  // Suporte e operacao
+  {
+    category: "Suporte e operacao",
+    title: "Suporte e manutencao",
+    slug: "suporte-e-manutencao-atualizacoes",
+    description: "Periodos inclusos por produto e manutencao evolutiva.",
+    order: 1,
+  },
+  {
+    category: "Suporte e operacao",
     title: "Entregaveis padroes",
     slug: "entregaveis-padroes",
-    description:
-      "Codigo fonte, documentacao tecnica, manuais, handoff de design e acesso aos ambientes.",
-    order: 1,
-  },
-  {
-    category: "Entregas e suporte",
-    title: "Ambientes dev, homolog e producao",
-    slug: "ambientes-dev-homolog-producao",
-    description: "Como organizamos ambientes e responsabilidades de deploy e acessos.",
+    description: "Codigo, documentacao, handoff e acessos.",
     order: 2,
   },
   {
-    category: "Entregas e suporte",
-    title: "Suporte e manutencao",
-    slug: "suporte-e-manutencao",
-    description: "SLAs, canais de suporte, manutencao preventiva e roadmap evolutivo.",
+    category: "Suporte e operacao",
+    title: "Ambientes dev, homolog e producao",
+    slug: "ambientes-dev-homolog-producao",
+    description: "Organizacao de ambientes, deploy e acessos.",
     order: 3,
   },
 
-  // Contratos e politicas
+  // Direitos e licencas
   {
-    category: "Contratos e politicas",
-    title: "Contratos e modelos",
-    slug: "contratos-e-modelos",
-    description: "Visao geral de escopo, prazos, valores, revisoes e anexos tecnicos.",
+    category: "Direitos e licencas",
+    title: "Propriedade intelectual e licenciamento",
+    slug: "propriedade-intelectual-licenciamento",
+    description: "Uso do codigo, assets e licencas de terceiros.",
     order: 1,
   },
+
+  // Seguranca e dados
   {
-    category: "Contratos e politicas",
-    title: "Propriedade intelectual e licencas",
-    slug: "propriedade-intelectual-e-licencas",
-    description: "Direitos sobre codigo, design, dados e uso de licencas de terceiros.",
-    order: 2,
-  },
-  {
-    category: "Contratos e politicas",
-    title: "Politica de privacidade e LGPD",
-    slug: "politica-de-privacidade-e-lgpd",
-    description: "Tratamento de dados, responsabilidades e conformidade.",
-    order: 3,
-  },
-  {
-    category: "Contratos e politicas",
-    title: "Politica de cancelamento e reembolso",
-    slug: "politica-de-cancelamento-e-reembolso",
-    description: "Termos para encerramento, reembolso e portabilidade de ativos.",
-    order: 4,
+    category: "Seguranca e dados",
+    title: "Seguranca e confidencialidade",
+    slug: "seguranca-confidencialidade-dados",
+    description: "Boas praticas, dados sensiveis e acessos.",
+    order: 1,
   },
 
   // Financeiro e comercial
@@ -134,30 +138,39 @@ export const docsEntries: DocEntry[] = [
     category: "Financeiro e comercial",
     title: "Modelos de cobranca",
     slug: "modelos-de-cobranca",
-    description: "Projeto fechado, hora tecnica, mensalidade, revenue share e combinacoes hibridas.",
+    description: "Fechado, hora, mensalidade, revenue share e hibridos.",
     order: 1,
   },
   {
     category: "Financeiro e comercial",
     title: "Faturamento e pagamentos",
     slug: "faturamento-e-pagamentos",
-    description: "Ciclos de faturamento, meios de pagamento e impostos usuais.",
+    description: "Ciclos, meios de pagamento e impostos usuais.",
     order: 2,
   },
 
-  // Parcerias e white-label
+  // Parcerias
   {
     category: "Parcerias e white-label",
     title: "Parcerias B2B e white-label",
     slug: "parcerias-b2b-e-white-label",
-    description: "Modelos de cooperacao com agencias e dev houses, licenciamento e squads.",
+    description: "Modelos com agencias e software houses.",
     order: 1,
   },
   {
     category: "Parcerias e white-label",
     title: "Requisitos tecnicos para parceiros",
     slug: "requisitos-tecnicos-para-parceiros",
-    description: "Padroes de codigo, comunicacao, SLAs e expectativas tecnicas.",
+    description: "Padroes de codigo, comunicacao e SLAs esperados.",
     order: 2,
+  },
+
+  // FAQ
+  {
+    category: "FAQ",
+    title: "FAQ de projetos",
+    slug: "faq-projetos-ateliux",
+    description: "Prazos, escopo, integracoes, manutencao e pagamentos.",
+    order: 1,
   },
 ];
