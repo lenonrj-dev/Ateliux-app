@@ -18,7 +18,8 @@ export function PageTransition({ children }: PageTransitionProps) {
   useEffect(() => setMounted(true), []);
 
   useEffect(() => {
-    const scrollBehavior = reduceMotion ? "auto" : "smooth";
+    const prefersReducedMotion = Boolean(reduceMotion);
+    const scrollBehavior = prefersReducedMotion ? "auto" : "smooth";
     window.scrollTo({ top: 0, behavior: scrollBehavior as ScrollBehavior });
   }, [pathname, reduceMotion]);
 
@@ -26,7 +27,8 @@ export function PageTransition({ children }: PageTransitionProps) {
     return <main className="relative min-h-screen">{children}</main>;
   }
 
-  const initialVariant = reduceMotion ? false : "initial";
+  const prefersReducedMotion = Boolean(reduceMotion);
+  const initialVariant = prefersReducedMotion ? false : "initial";
 
   return (
     <LazyMotion features={domAnimation}>
@@ -36,7 +38,7 @@ export function PageTransition({ children }: PageTransitionProps) {
           initial={initialVariant}
           animate="animate"
           exit="exit"
-          variants={pageVariants(reduceMotion)}
+          variants={pageVariants(prefersReducedMotion)}
           transition={pageTransition}
           className="relative min-h-screen"
         >
