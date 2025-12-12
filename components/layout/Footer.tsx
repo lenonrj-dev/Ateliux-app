@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ChevronDown, Globe2, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export function Footer() {
@@ -5,24 +6,42 @@ export function Footer() {
     <footer className="border-t border-white/5 bg-[#05070f] text-slate-200">
       <div className="mx-auto max-w-6xl px-6 pb-12 lg:px-8">
         <div className="flex flex-wrap items-center gap-4 py-6 text-sm text-slate-300">
-          <a href="/docs" className="transition hover:text-primary">
+          <Link
+            href="/docs"
+            className="transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
             Documentacao
-          </a>
-          <a href="/docs/termos-de-servico" className="transition hover:text-primary">
+          </Link>
+          <Link
+            href="/docs/termos-de-servico"
+            className="transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
             Termos de servico
-          </a>
-          <a href="/docs/politica-de-privacidade" className="transition hover:text-primary">
+          </Link>
+          <Link
+            href="/docs/politica-de-privacidade"
+            className="transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
             Privacidade
-          </a>
-          <a href="/docs/politica-de-cookies" className="transition hover:text-primary">
+          </Link>
+          <Link
+            href="/docs/politica-de-cookies"
+            className="transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
             Cookies
-          </a>
-          <a href="/docs/suporte-e-manutencao-atualizacoes" className="transition hover:text-primary">
+          </Link>
+          <Link
+            href="/docs/suporte-e-manutencao-atualizacoes"
+            className="transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
             Suporte e manutencao
-          </a>
-          <a href="/docs/faq-projetos-ateliux" className="transition hover:text-primary">
+          </Link>
+          <Link
+            href="/docs/faq-projetos-ateliux"
+            className="transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
             FAQ
-          </a>
+          </Link>
         </div>
         <div className="border-t border-white/5 pt-6">
           <div className="flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400">
@@ -45,7 +64,7 @@ export function Footer() {
                   key={item.label}
                   href="#"
                   aria-label={item.label}
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-200 transition hover:border-primary/60 hover:text-primary"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-200 transition hover:border-primary/60 hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   {item.icon}
                 </a>

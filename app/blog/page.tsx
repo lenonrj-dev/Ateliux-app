@@ -63,7 +63,7 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-black text-slate-100">
       <Navbar />
-      <main className="mx-auto flex max-w-[1180px] flex-col gap-14 px-6 pb-24 pt-14 lg:px-8 lg:pt-20">
+      <main className="mx-auto flex max-w-[1180px] flex-col gap-14 px-6 pb-24 pt-24 lg:px-8 lg:pt-32">
         <NewsroomHero
           title="Newsroom Ateliux"
           description="Novidades, bastidores e guias praticos sobre sites, ecommerce, dashboards e automacoes."

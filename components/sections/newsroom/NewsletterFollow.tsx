@@ -12,9 +12,9 @@ export function NewsletterFollow() {
             <input
               type="email"
               placeholder="Digite seu email"
-              className="w-full rounded-full border border-[#1f1f1f] bg-[#0d0d0f] px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-white/30 focus:outline-none sm:flex-1"
+              className="w-full rounded-full border border-[#1f1f1f] bg-[#0d0d0f] px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50 sm:flex-1"
             />
-            <button className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition hover:bg-slate-200 sm:px-6">
+            <button className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition hover:bg-slate-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:px-6">
               Receber novidades
             </button>
           </form>
@@ -24,7 +24,11 @@ export function NewsletterFollow() {
           <p className="text-slate-300">Fique por dentro de cases, guias e atualizacoes.</p>
           <div className="flex items-center gap-4 text-white">
             {[Twitter, Mail, Github, Youtube].map((Icon) => (
-              <a key={Icon.displayName ?? Icon.name} href="#" className="transition hover:text-primary">
+              <a
+                key={Icon.displayName ?? Icon.name}
+                href="#"
+                className="transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
                 <Icon className="h-5 w-5" />
               </a>
             ))}

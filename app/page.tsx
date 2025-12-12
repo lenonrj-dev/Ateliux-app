@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-[#020308] text-slate-100">
       <Navbar />
-      <main>
+      <main className="space-y-10 pt-24 md:space-y-16 md:pt-28 lg:space-y-20 lg:pt-32">
         <Hero />
         <LogosStrip />
         <BusinessApplication />
